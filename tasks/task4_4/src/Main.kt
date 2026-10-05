@@ -10,4 +10,16 @@ import com.github.ajalt.mordant.terminal.Terminal
 
 fun main(args: Array<String>) {
     // Add your code here
+        if (args.size != 3) {
+        println("Error: invalid input")
+        exitProcess(1)
+    }
+
+    var currentTemp = args[0].toFloat()
+
+    while(currentTemp <= args[1].toFloat()){
+        val fahrenheit = (currentTemp * 1.8f)+32
+        println("$currentTemp in Farenheit is $fahrenheit")
+        currentTemp += args[2].toFloat()
+    }
 }
