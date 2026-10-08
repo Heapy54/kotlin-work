@@ -8,7 +8,8 @@ fun main(args: Array<String>) {
         exitProcess(1)
     }
 
-    val result = anagrams(args[0],args[1])
-    println("The result is $result")
+    if (args[1].anagrams(args[0])) {
+    println("${args[0]} and ${args[1]} are anagrams!")
+}
 
 }
