@@ -17,4 +17,23 @@ class MedianTest : FreeSpec({
     }
 
     // Write four more tests here
+    //Test for size 1
+    "Median when size=1" {
+        median(listOf(5.0)) shouldBe (5.0.toFloat() plusOrMinus tolerance)
+    }
+
+    //Test for size 2
+    "Median when size=2" {
+        median(listOf(1.0, 2.0)) shouldBe (1.5.toFloat() plusOrMinus tolerance)
+    }
+
+    //Test for size 3
+    "Median when size=3" {
+        median(listOf(3.0,4.0,5.0)) shouldBe (4.0.toFloat() plusOrMinus tolerance)
+    }
+
+    //Test for size 4
+    "Median when size=4" {
+        median(listOf(1.0,2.0,3.0,4.0)) shouldBe (2.5.toFloat() plusOrMinus tolerance)
+    }
 })
