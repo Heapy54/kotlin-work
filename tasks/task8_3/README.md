@@ -21,3 +21,9 @@ Test your solution with
 
 Make sure your solution handles the case of a missing command line argument
 in a sensible way.
+
+8.1.1
+{x: Double -> x*x}
+
+8.1.2
+{a: Int, b: Int -> a < b}
